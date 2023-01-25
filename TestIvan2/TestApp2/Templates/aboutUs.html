@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+<style>
+    .container{
+      width: 100%;
+      margin: 100;
+      color: blue;
+      display: inline-block;
+    }   
+</style>
+
+
+<body>
+    {% block content %}
+    <center>
+    <h1 style="font-size:36px ; background-color:rgb(233, 236, 239);">Test Equipment Team</h1>
+    <p style="font-size:20px">
+    
+    Welcome to the main page for the Micron Test Equipment system. <br>
+    Our vision is transforming how the test Equipment uses information to engineering solutions for all.  <br>
+    
+    </p>
+    <br>
+    <img alt="/static/favicon.ico" src="/static/homepage.jpg">
+    </center>
+    <br>
+    </div>
+    {% endblock %}
+</body>

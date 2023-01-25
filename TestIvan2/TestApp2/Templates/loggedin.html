@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+<style>
+    .container{
+      width: 200%;
+      margin: 100;
+      color: blue;
+      display: inline-block;
+    }   
+</style>
+<body>
+    {% block content %}
+    <form method="get" action="logout">
+    <button type="submit" style="float: right;width: 10%; height: 30px;font-size : 15px">logout</button>
+    </form>
+    <h2>
+    <p style="text-align:center;"> Welcome {{ username }}!!
+    </p>
+    </h2> 
+    <img src={% static 'homepage.jpg' %} width="1050" height="700" style="text-align:center;">
+    <div class ="container">
+         <p></p>
+         
+    </div>
+    {% endblock %}
+</body>
